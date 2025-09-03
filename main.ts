@@ -106,7 +106,7 @@ export default class MistakeTrackerPlugin extends Plugin {
 		await this.loadData();
 		this.statusBarItem = this.addStatusBarItem();
 		this.updateStatusBar();
-		
+
 		this.addCommand({
 			id: 'add-mistake',
 			name: 'Add mistake',
@@ -158,8 +158,8 @@ class SampleSettingTab extends PluginSettingTab {
 			.setName('Display mode')
 			.setDesc('Display from a specific date i.e 9 mistakes since 1967-06-07 OR display without the date')
 			.addDropdown(dropdown => dropdown
-				.addOption('since-date', 'Show date (9 mistakes since 1967-06-07)')
-				.addOption('clean', 'Clean display (9 mistakes)')
+				.addOption('since-date', 'Show date')
+				.addOption('clean', 'Clean display')
 				.setValue(this.plugin.data.displayMode)
 				.onChange(async (value) => {
 					this.plugin.data.displayMode = value as 'since-date' | 'clean';
@@ -226,6 +226,7 @@ class SampleSettingTab extends PluginSettingTab {
 				dropdown.setValue("0");
 			})
 			.addButton(button => {
+				button.setButtonText("Delete");
 				button.onClick(()=>{
 					const dropdown = button.buttonEl.parentElement?.querySelector('select') as HTMLSelectElement;
 					const selectedIndex = parseInt(dropdown.value);
