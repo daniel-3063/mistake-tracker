@@ -1,9 +1,9 @@
 {
-	"id": "sample-plugin",
-	"name": "Sample Plugin",
+	"id": "mistake-tracker",
+	"name": "Mistake tracker",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Demonstrates some of the capabilities of the Obsidian API.",
+	"description": "Simple lightweight mistake tracker",
 	"author": "Obsidian",
 	"authorUrl": "https://obsidian.md",
 	"fundingUrl": "https://obsidian.md/pricing",
