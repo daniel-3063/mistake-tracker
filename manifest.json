@@ -4,7 +4,7 @@
 	"version": "1.0.1",
 	"minAppVersion": "1.9.12",
 	"description": "Simple lightweight mistake tracker",
-	"author": "Obsidian",
+	"author": "Daniel Zhu",
 	"authorUrl": "https://github.com/daniel-3063",
 	"fundingUrl": "",
 	"isDesktopOnly": true
