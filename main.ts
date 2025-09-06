@@ -102,7 +102,7 @@ export default class MistakeTrackerPlugin extends Plugin {
 	}
 
 	async onload() {
-		this.addSettingTab(new SampleSettingTab(this.app, this));
+		this.addSettingTab(new MistakeSettingTab(this.app, this));
 		await this.loadData();
 		this.statusBarItem = this.addStatusBarItem();
 		this.updateStatusBar();
@@ -141,7 +141,7 @@ export default class MistakeTrackerPlugin extends Plugin {
 
 }
 
-class SampleSettingTab extends PluginSettingTab {
+class MistakeSettingTab extends PluginSettingTab {
 	plugin: MistakeTrackerPlugin;
 
 	constructor(app: App, plugin: MistakeTrackerPlugin) {
